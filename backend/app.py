@@ -16,7 +16,7 @@ from supabase_auth.errors import AuthApiError
 load_dotenv(Path(__file__).resolve().with_name(".env"))
 
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:3000"])
+CORS(app, origins=["http://localhost:3000", "https://task-management-xyz.vercel.app"])
 
 SUPABASE_URL = os.getenv("SUPABASE_URL")
 SUPABASE_KEY = os.getenv("SUPABASE_KEY")
